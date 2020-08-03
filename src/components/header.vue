@@ -32,6 +32,7 @@ export default {
 *{
     font-family: verdana;
     margin: 0;
+    
 }
 
 #heade{
@@ -41,9 +42,9 @@ display: flex;
     min-height: 40px;
    position: fixed;
    width:100%;
-z-index: 1;
-top:0;
-left: 0;
+  z-index: 1;
+  top:0;
+  left: 0;
    
 }
 
@@ -52,7 +53,7 @@ left: 0;
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-  
+    margin-right:10px;
 } 
 
 /* menu base styles */
@@ -64,12 +65,14 @@ nav ul{
     list-style-type: none;
     padding: 0;
     margin-right:100px;
+    
 }
 ul{
   list-style-type:none;
   display:flex;
   justify-content: flex-end;
-  
+ flex-shrink: 1;
+flex-grow: 1;
   }
 
 nav a{
@@ -79,6 +82,7 @@ nav a{
     display: block;
     padding: 10px;
     display:flex;
+    
   }
 nav a:hover{
     
@@ -94,5 +98,18 @@ img{
 .router-link-active{
   color:#edca3b;
 }
+@media screen and (max-width:599px){
+
+#heade{
+  
+  width:90%;
+  
+}
+img{
+  width:200px;
+}
+
+}
+
 
 </style>

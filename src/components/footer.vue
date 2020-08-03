@@ -44,7 +44,7 @@ display: flex;
 }
 a{
   text-decoration:none;
-  dispaly:block;
+  display:block;
   color:#000;
  }
  
@@ -55,5 +55,14 @@ ul{
 li{
   align:center;
   padding:15px;
+  }
+  @media (max-width: 599px)
+  {
+#footer {
+   text-align: center;
+    max-height: 20px;
+    font-size: 0.6em;
+}
+
   }
   </style>

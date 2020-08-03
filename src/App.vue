@@ -3,8 +3,7 @@
   <app-header></app-header>
     <router-view></router-view>    
       
-        
-    
+       
   </div>
 </template>
 
@@ -12,11 +11,14 @@
 
 import header from './components/header.vue';
 import about from './components/about.vue';
+
+
 import footer from './components/footer.vue';
 export default {
   components:{
     'app-header': header,
     'app-about':about,
+    
     'app-footer': footer
   },
   data () {
